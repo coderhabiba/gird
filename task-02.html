@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 02</title>
+  <style>
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* 4 equal columns */
+      height: 100vh;
+      /* Ensure full screen height */
+      grid-template-areas:
+        "aside aside second second"
+        "aside aside third fourth";
+        gap: 10px;
+    }
+
+    aside {
+      background-color: rgb(32, 219, 75);
+      grid-area: aside;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: cursive;
+      color: aliceblue;
+      font-size: 48px;
+    }
+
+    .secound {
+      background-color: rgb(231, 67, 7);
+      grid-area: second;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: cursive;
+      color: aliceblue;
+      font-size: 48px;
+    }
+
+    .third {
+      background-color: blueviolet;
+      grid-area: third;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: cursive;
+      color: aliceblue;
+      font-size: 48px;
+    }
+
+    .fourth {
+      background-color: rgb(224, 206, 11);
+      grid-area: fourth;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: cursive;
+      color: aliceblue;
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: 576px){
+      section{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "aside"
+        "second"
+        "third"
+        "fourth"
+        ;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <aside>
+      1
+    </aside>
+
+    <div class="secound">2</div>
+    <div class="third">3</div>
+    <div class="fourth">4</div>
+
+  </section>
+</body>
+
+</html>
