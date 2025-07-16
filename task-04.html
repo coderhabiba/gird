@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Task-04</title>
+  <style>
+    main{
+      display: grid;
+      gap: 25px;
+    }
+    main > div {
+      display: grid;
+      grid-template-columns: 25% auto;
+      border: 1px solid #f4f4f4;
+      gap: 25px;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+    }
+    @media screen and (max-width: 992px)  {
+      main > div{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  
+  <main>
+    <div>
+      <img class="" src="./img/chicken-skewers-with-slices-apples-chili.jpg" alt="">
+      <div>
+        <h2>Chiken Skewer</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quis aut repellat facilis esse fugiat velit numquam odit, harum impedit dolores quam magnam sed asperiores! Veniam molestiae optio corporis at minus consectetur iusto deleniti quidem adipisci. Voluptate veritatis nulla illum qui magnam placeat commodi voluptatem. Voluptatibus, alias aliquid! Repudiandae quos, earum alias at delectus, doloremque enim dignissimos cupiditate vero deserunt necessitatibus iure velit ratione eligendi quasi voluptatum placeat tempore possimus dolorum. Quae qui ut consectetur veniam omnis! Voluptate tenetur a commodi ratione laborum repudiandae hic enim quasi tempore, corrupti dolor iusto perferendis fugit nisi quo voluptas obcaecati qui fugiat deserunt.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div>
+      <img class="" src="./img/Masala-Dosa-1024x538.jpg" alt="">
+      <div>
+        <h2>Chiken Skewer</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quis aut repellat facilis esse fugiat velit
+          numquam odit, harum impedit dolores quam magnam sed asperiores! Veniam molestiae optio corporis at minus consectetur
+          iusto deleniti quidem adipisci. Voluptate veritatis nulla illum qui magnam placeat commodi voluptatem. Voluptatibus,
+          alias aliquid! Repudiandae quos, earum alias at delectus, doloremque enim dignissimos cupiditate vero deserunt
+          necessitatibus iure velit ratione eligendi quasi voluptatum placeat tempore possimus dolorum. Quae qui ut consectetur
+          veniam omnis! Voluptate tenetur a commodi ratione laborum repudiandae hic enim quasi tempore, corrupti dolor iusto
+          perferendis fugit nisi quo voluptas obcaecati qui fugiat deserunt.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+  </main>
 </body>
+
 </html>
